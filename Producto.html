@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+   
+</head>
+<body>
+
+    <center><h2>Carrito de Compras</h2>
+    <button onclick="document.getElementById('myImage').src='KenmaLejos.jpg'">
+        Normal
+    </button>
+    <img id="myImage" src="KenmaLejos.jpg" style="width: 200px">
+    
+    
+    <button onclick="document.getElementById('myImage').src='KenmaEnfrente.jpg'">
+        Enfrente
+    </button>
+   
+    <button onclick="document.getElementById('myImage').src='KenmaAtras.jpg'">
+        Atras
+    </button>
+    <button onclick="document.getElementById('myImage').src='Izquierda.jpg'">
+        Izquierda
+    </button>
+    <button onclick="document.getElementById('myImage').src='Derecha.jpg'">
+        Derecha
+    </button>
+    
+
+    <div class="producto" id="producto">
+        <h3>Haikyuu Kenma Kozume Peluche</h3>
+       
+        <p id="demo2">$382.93</p> 
+       
+        >Cantidad: <span id="cantidad">1</span></p>
+        <button type="button" onclick="aumentar()">Cambiar tamaño!</button
+        
+        <!-- Botones para el carrito -->
+        <button type="button" onclick="aumentarCantidad()">Aumentar</button>
+        <button type="button" onclick="disminuirCantidad()">Disminuir</button>
+       
+
+        <!-- Descripción del producto -->
+        <center><p id="descripcion" class="descripcion">
+            Muñeca de peluche Haikyuu Kenma Kozume, 
+            regalo para niños de 20 cm      
+            El paquete incluye:
+            1 juguete de peluche (como se muestra en las imágenes)
+            
+            Garantía del vendedor: 60 días</p></center>
+
+        <!-- Botones para mostrar/ocultar descripción -->
+        <button type="button" onclick="mostrarDescripcion()">Mostrar Descripción</button>
+        <button type="button" onclick="ocultarDescripcion()">Ocultar Descripción</button>
+
+       
+        
+    </div>
+
+    <script src="JavaScript.js"></script> <!-- Conexión al archivo JavaScript externo -->
+</body>
+</html>

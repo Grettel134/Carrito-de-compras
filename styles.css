@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos del contenedor principal */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen del producto */
+#myImage {
+    width: 200px;
+    height: auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: transform 0.3s;
+}
+
+#myImage:hover {
+    transform: scale(1.05);
+}
+
+/* Contenedor del producto */
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.producto h3 {
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    color: #555;
+}
+
+/* Botones de acción */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Descripción del producto */
+.descripcion {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: #444;
+    font-size: 0.9em;
+}
+
+/* Botones mostrar/ocultar descripción */
+button[type="button"] {
+    background-color: #FF4136;
+}
+
+button[type="button"]:hover {
+    background-color: #FF0000;
+}
